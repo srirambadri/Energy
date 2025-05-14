@@ -12,5 +12,5 @@
 - Constructing an optimisation model in Python, using open-source solvers, to effectively address the challenges and opportunities of BESS deployment
 - The primary objective of this optimisation model is to minimise the cost associated with operating the system. This cost includes the expense of purchasing power from the grid at the spot market price
 
-# MEnergy Trading  
+# Energy Trading  
 - Developed an algorithm to maximize profits from trades between two auctions of the day-ahead market in UK's electricity market(Kaggle)
