@@ -6,7 +6,7 @@
 # Forecasting with Deep learning
 - Deep learning algorithms have played vital roles in prediction and forecasting problems 
 - Recurrent Neural Networks (RNN) and Long-Term Short Memory (LSTM) are applied with the aim of making forecast on future energy consumption
-- Models generally performed better by reducing batch size and by increasing epoch sizes. Having evaluated the results using RMSE, MAE and R2 scores, the LSTM and RNN models are both seen to have excellent performances in the forecasting of hourly energy consumption
+- Models generally performed better by reducing batch size and by increasing epoch sizes. Results are evaluated using RMSE, MAE and R2 scores
 
 # MILP for BESS optimisation using OR-Tools  
 - Constructing an optimisation model in Python, using open-source solvers, to effectively address the challenges and opportunities of BESS deployment
