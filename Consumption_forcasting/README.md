@@ -31,7 +31,7 @@ Consumption_forecasting/
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/srirambadri/energy.git)
+    git clone https://github.com/srirambadri/energy.git
     cd Consumption_forecasting
     ```
 
