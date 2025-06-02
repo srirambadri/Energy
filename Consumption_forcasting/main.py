@@ -73,8 +73,6 @@ def run_forecasting_pipeline():
 
     # --- RNN Model ---
     print("\n--- Running RNN Model ---")
-    # For RNN/LSTM, adjust sequence_length based on your data and desired look-back
-    # Note: X_test needs to include enough previous steps for sequence creation
     rnn_forecaster = RNNForecaster(sequence_length=30, epochs=50, batch_size=32)
     rnn_forecaster.train(X_train, y_train)
     # RNN predict returns y_true_seq and predictions_seq for easier comparison
@@ -85,7 +83,6 @@ def run_forecasting_pipeline():
     print("\n--- Running LSTM Model ---")
     lstm_forecaster = LSTMForecaster(sequence_length=30, epochs=50, batch_size=32)
     lstm_forecaster.train(X_train, y_train)
-    # LSTM predict returns y_true_seq and predictions_seq for easier comparison
     lstm_y_true, lstm_predictions = lstm_forecaster.predict(X_test, y_test)
     lstm_metrics = lstm_forecaster.evaluate(lstm_y_true, lstm_predictions)
 
@@ -95,7 +92,6 @@ def run_forecasting_pipeline():
     plt.plot(y_test.index, xgboost_predictions, label='XGBoost Predictions', alpha=0.7)
     plt.plot(y_test.index, lightgbm_predictions, label='LightGBM Predictions', alpha=0.7)
     
-    # For RNN/LSTM, the index for predictions will be shifted due to sequence length
     rnn_plot_index = y_test.index[rnn_forecaster.sequence_length:]
     lstm_plot_index = y_test.index[lstm_forecaster.sequence_length:]
 
