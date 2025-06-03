@@ -14,3 +14,12 @@ The ENTSO-E Data Analysis is designed to facilitate a seamless operation in hand
 - Pandas 2.1.2
 - Plotly 5.18.0
 - Entsoe-py   
+
+
+![Alt text](Plot/1.png)
+
+![Alt text](Plot/2.png)
+
+![Alt text](Plot/3.png)
+
+![Alt text](Plot/4.png)
