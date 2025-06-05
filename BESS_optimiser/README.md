@@ -1,4 +1,4 @@
-# Battery Energy Storage System (BESS) Optimisation Pipeline
+## Description
 
 This project provides a dockerised Python application for optimising Battery Energy Storage System (BESS) operations. It fetches real-time energy market data and uses a linear programming solver (OR-Tools) to determine optimal battery charging and discharging schedules.
 
