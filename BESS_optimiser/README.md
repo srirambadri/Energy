@@ -17,7 +17,7 @@ bess_optimizer_pipeline/
 │   ├── __init__.py         
 │   ├── config.py           # Configuration settings (paths, API details, dates)
 │   ├── smard_client.py     # Handles SMARD API data fetching and preprocessing
-│   ├── bess_optimizer.py   # Contains the OR-Tools optimisation model
+│   ├── bess_optimiser.py   # Contains the OR-Tools optimisation model
 │   └── main.py             # Main entry point to run the pipeline
 ├── data/
 │   └── BESS_Data.xlsx      # BESS and Grid parameters (REQUIRED)
@@ -39,7 +39,7 @@ bess_optimizer_pipeline/
     ```
 2.  **Building the Docker Image**
     ```bash
-    docker build -t bess_optimizer_image .
+    docker build -t bess_optimiser_image .
 
 ## Running the Application
 
@@ -58,5 +58,5 @@ SMARD_END_DATE=YYYY-MM-DD HH:MM:SS
 docker run -it --rm \
   -v "$(pwd)/output:/app/output" \
   --env-file ./smard_dates.env \
-  bess_optimizer_image
+  bess_optimiser_image
 ```
