@@ -1,6 +1,6 @@
 ## Description
 
-A ML-based methodology to forecast energy futures prices and volume, and subsequently develop a trading algorithm aimed at maximizing profits in the volatile energy market. It leverages historical auction data from the UK energy market to train and evaluate the models' performance.
+A ML-based methodology to forecast energy futures prices and volume, and subsequently develop a trading algorithm aimed at maximizing profits in the volatile energy market. It leverages historical auction data from the UK energy market to train and evaluate the models' performance
 
 
 ## Project Overview
@@ -18,4 +18,4 @@ The approach is structured around four main stages:
 
 ## Key Findings
 
-The trading algorithm's reliance on precise forecasts is crucial, as overestimation or underestimation of auction prices can result in actual profits falling short of expectations, potentially impacting investor confidence and reputation. Model Averaging was identified as the most suitable forecasting model for this task.
+The trading algorithm's reliance on precise forecasts is crucial, as overestimation or underestimation of auction prices can result in actual profits falling short of expectations, potentially impacting investor confidence and reputation. Model Averaging was identified as the most suitable forecasting model for this task
