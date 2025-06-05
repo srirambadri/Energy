@@ -34,8 +34,8 @@ bess_optimizer_pipeline/
 
 1.  **Clone the Repository (or download the files):**
     ```bash
-    git clone https://github.com/srirambadri/bess_optimiser.git
-    cd bess_optimizer_pipeline
+    git clone https://github.com/srirambadri/Energy.git
+    cd BESS_optimiser
     ```
 2.  **Building the Docker Image**
     ```bash
