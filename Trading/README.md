@@ -59,7 +59,7 @@ To execute the full energy trading pipeline (data processing, forecasting, tradi
 
 ```bash
 python src/main.py
-
+```
 
 ## Key Findings
 
