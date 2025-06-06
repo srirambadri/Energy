@@ -60,3 +60,5 @@ docker run -it --rm \
   --env-file ./smard_dates.env \
   bess_optimiser_image
 ```
+
+![Alt text](output/SOC_MarketPrice_Plot.png)
