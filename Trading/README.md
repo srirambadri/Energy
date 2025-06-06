@@ -66,3 +66,8 @@ python src/main.py
 The trading algorithm's reliance on precise forecasts is crucial, as overestimation or underestimation of auction prices can result in actual profits falling short of expectations, potentially impacting investor confidence and reputation. Model Averaging was identified as the most suitable forecasting model for this task
 
 
+![Alt text](Plot/Auction_price.png)
+
+![Alt text](Plot/Auction_vol.png)
+
+![Alt text](Plot/Exp_price.png)
