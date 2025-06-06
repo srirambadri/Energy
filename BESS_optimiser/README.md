@@ -44,9 +44,11 @@ bess_optimizer_pipeline/
 ## Running the Application
 
 **Option 1: Run with Default Dates**
+
 The config.py file automatically sets the SMARD data fetching period from the beginning of yesterday to the beginning of today.
 
 **Option 2: Run with Custom Dates**
+
 Specify the SMARD_START_DATE and SMARD_END_DATE using an smard_dates.env environment file.
 ```bash
 # smard_dates.env
