@@ -70,4 +70,4 @@ The trading algorithm's reliance on precise forecasts is crucial, as overestimat
 
 ![Alt text](Plot/Auction_vol.png)
 
-![Alt text](Plot/Exp_price.png)
+![Alt text](Plot/Exp_profit.png)
