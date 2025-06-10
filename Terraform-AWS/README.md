@@ -40,7 +40,7 @@ aws configure
 **Clone this Repository:**
 ```bash
 git clone https://github.com/srirambadri/Energy.git
-cd Terraform-AWS # e.g., cd terraform-energy-trading
+cd Terraform-AWS 
 ```
 **Initialize Terraform:**
 ```bash
