@@ -64,13 +64,15 @@ project_name: A unique prefix for all resources (default: energy-trading).
 
 kinesis_stream_name: Base name for the Kinesis Data Stream (default: market-data-stream).
 
+author_name: (default: SB).
+
 ## Outputs
 
 kinesis_stream_name: The full name of your Kinesis Data Stream.
 
 market_data_raw_bucket_name: The name of the S3 bucket for raw market data.
 
-forecast_results_bucket_name: The name of the S3 bucket for future forecast results.
+forecast_results_bucket_name: The name of the S3 bucket for forecast results.
 
 ## Cleanup
 ```bash
