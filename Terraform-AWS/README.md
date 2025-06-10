@@ -50,7 +50,7 @@ terraform init -upgrade
 ```bash
 terraform plan
 ```
-**Apply the Configuration:**A
+**Apply the Configuration:**
 ```bash
 terraform apply
 Enter a value: yes
