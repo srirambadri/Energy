@@ -177,55 +177,6 @@ resource "aws_ecr_repository" "energy_forecaster_repo" {
 
 # --- AWS Batch Compute Environment and Job Queue ---
 
-# IAM Role for AWS Batch Service
-resource "aws_iam_role" "batch_service_role" {
-  name = "${var.project_name}-batch-service-role-${random_id.suffix.hex}"
-
-  assume_role_policy = jsonencode({
-    Version = "2012-10-17",
-    Statement = [
-      {
-        Action = "sts:AssumeRole",
-        Effect = "Allow",
-        Principal = {
-          Service = "batch.amazonaws.com"
-        }
-      }
-    ]
-  })
-  tags = {
-    Project   = var.project_name
-    ManagedBy = var.author_name
-  }
-}
-
-# Attach the standard AWSBatchServiceRole managed policy
-resource "aws_iam_role_policy_attachment" "batch_service_role_attachment" {
-  role       = aws_iam_role.batch_service_role.name
-  policy_arn = "arn:aws:iam::aws:policy/service-role/AWSBatchServiceRole"
-}
-
-# Add an inline policy to grant ecs:DeleteCluster for cleanup
-resource "aws_iam_role_policy" "batch_service_inline_ecs_delete_policy" {
-  name = "${var.project_name}-batch-service-ecs-delete-policy-${random_id.suffix.hex}"
-  role = aws_iam_role.batch_service_role.id
-
-  policy = jsonencode({
-    Version = "2012-10-17",
-    Statement = [
-      {
-        Action = [
-          "ecs:DeleteCluster",
-          "ecs:DescribeClusters", # Often useful for cleanup orchestration
-        ],
-        Effect = "Allow",
-        Resource = "arn:aws:ecs:${var.aws_region}:${data.aws_caller_identity.current.account_id}:cluster/*" # Allow deleting any ECS cluster managed by Batch
-      }
-    ]
-  })
-}
-
-
 # IAM Role for EC2 Instances in Batch Compute Environment
 resource "aws_iam_role" "batch_instance_role" {
   name = "${var.project_name}-batch-instance-role-${random_id.suffix.hex}"
@@ -283,7 +234,6 @@ resource "aws_security_group" "batch_compute_sg" {
   }
 }
 
-
 resource "aws_batch_compute_environment" "energy_forecaster_ce" {
   compute_environment_name = "${var.project_name}-compute-env-${random_id.suffix.hex}"
   type                     = "MANAGED"
@@ -307,8 +257,6 @@ resource "aws_batch_compute_environment" "energy_forecaster_ce" {
       image_type = "ECS_AL2" 
     }
   }
-
-  service_role = aws_iam_role.batch_service_role.arn
 
   tags = {
     Project   = var.project_name
