@@ -28,6 +28,6 @@ This plot illustrates the Battery Energy Storage System's State of Charge (SoC) 
 
 This plot displays the State of Charge (SoC) for each individual EV throughout the simulation. It visualizes charging activity when EVs are docked and maintaining desired charge levels. The optimization ensures each EV meets its desired_final_soe by departure, even with V2G participation where temporary discharge might occur to support the system during high-price periods.
 
-![Alt text](output/BESS_SoC_and_Market_Price.png)
+![Alt text](output/BESS_MP.png)
 
 ![Alt text](output/EV_SoC_Profiles.png)
