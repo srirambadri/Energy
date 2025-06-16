@@ -2,7 +2,7 @@
 
 This project optimizes the operation of an Electric Vehicle (EV) charging hub by integrating renewable energy and Vehicle-to-Grid (V2G) capabilities. It aims to reduce EV charging costs for end-users and minimize strain on the distribution network by leveraging local solar power (PV) and Battery Energy Storage Systems (BESS).
 
-The EV charging hub functions as a smart microgrid, designed to centrally manage power from diverse sources. It integrates a direct connection to the Grid, local Photovoltaic (PV) Panels for renewable energy generation, and a Battery Energy Storage System (BESS) for efficient energy buffering. At its core, the Charging Station allows multiple EVs to connect. This sophisticated system intelligently manages the bidirectional flow of energy, particularly emphasizing V2G capabilities, enabling EVs to not only draw power from the hub but also strategically feed electricity back to the grid when beneficial. This integrated approach ensures efficient power distribution, optimizes costs, and enhances overall grid stability.
+The EV charging hub functions as a smart microgrid, designed to centrally manage power from diverse sources. It integrates a direct connection to the Grid, renewable energy (Solar and Wind) intermittency, and a Battery Energy Storage System (BESS) for efficient energy buffering. At its core, the Charging Station allows multiple EVs to connect. This sophisticated system intelligently manages the bidirectional flow of energy, particularly emphasizing V2G capabilities, enabling EVs to not only draw power from the hub but also strategically feed electricity back to the grid when beneficial. This integrated approach ensures efficient power distribution, optimizes costs, and enhances overall grid stability.
 
 Using Mixed-Integer Linear Programming (MILP), the model determines optimal power flow and operational strategies. It supports Smart Charging and V2G functionality, focusing on minimizing lifetime investment and operational costs while enhancing energy self-sufficiency.
 
@@ -17,8 +17,6 @@ Using Mixed-Integer Linear Programming (MILP), the model determines optimal powe
 **BESS_Data.xlsx:** Parameters for BESS and grid connection limits
 
 **EV.xlsx:** Static EV parameters (capacity, initial SoC, desired final SoC) and docking schedules
-
-
 
 ## Plots
 
