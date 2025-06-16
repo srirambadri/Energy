@@ -6,7 +6,9 @@ The EV charging hub functions as a smart microgrid, designed to centrally manage
 
 Using Mixed-Integer Linear Programming (MILP), the model determines optimal power flow and operational strategies. It supports Smart Charging and V2G functionality, focusing on minimizing lifetime investment and operational costs while enhancing energy self-sufficiency.
 
-![Alt text](output/Flow.png)
+<div align=center>
+  <img src=output/Flow.png>
+</div>
 
 ## Data
 
