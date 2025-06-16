@@ -10,5 +10,5 @@
 # BESS Optimiser
 - A dockerised Python application for optimising Battery Energy Storage System (BESS) operations
 
-# BESS_V2G Optimiser
+# V2G Optimiser
 - MILP based optimiser for Smart EV charging station
