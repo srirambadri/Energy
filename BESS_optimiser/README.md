@@ -64,3 +64,7 @@ docker run -it --rm \
 ```
 
 ![Alt text](output/SOC_MarketPrice_Plot.png)
+
+![Alt text](output/BESS.png)
+
+![Alt text](output/V2G.png)
