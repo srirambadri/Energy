@@ -11,13 +11,13 @@ This project focuses on forecasting German day-ahead energy prices using the DAR
 
 ### Results
 
-- TFT
-
-![Alt text](TFT.png)
-
 - Transformer
 
 ![Alt text](TForm.png)
+
+- TFT
+
+![Alt text](TFT.png)
 
 - NBEATS
 
