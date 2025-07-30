@@ -21,4 +21,4 @@ This project focuses on forecasting German day-ahead energy prices using the DAR
 
 - NBEATS
 
-![Alt text](NBEAT.png)
+![Alt text](NBEATS.png)
