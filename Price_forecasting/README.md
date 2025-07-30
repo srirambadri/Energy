@@ -1,6 +1,6 @@
-## Energy Price Forecaster
+## Day-Ahead Energy Price Forecasting for Germany using DARTS
 
-This project forecasts German energy day ahead prices using DARTS Timeseries forecasting library
+This project focuses on forecasting German day-ahead energy prices using the DARTS time series forecasting library. To enhance prediction accuracy, the model integrates comprehensive data on electricity generation sources and localised weather features from five key cities: Aachen, Berlin, Hamburg, Munich, and Stuttgart. The dataset combines energy production and pricing data from ENTSO-E with meteorological variables from OpenWeatherMap. By leveraging multi-variate time series modelling, the project captures complex temporal and spatial dependencies to generate robust price forecasts.
 
 ### The models implemented are:
 
