@@ -14,4 +14,4 @@
 - MILP based optimiser for Smart EV charging station
 
 # Energy Price Forecasting
-- Time series forecasting using DARTS for predciting the day ahead energy prices in Germany 
+- Time series forecasting using DARTS for predicting the day ahead energy prices in Germany 
